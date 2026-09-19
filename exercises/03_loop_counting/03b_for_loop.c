@@ -16,9 +16,8 @@
 #include <stdio.h>
 
 int main(void) {
-    int i;
+    int i=1;
     int sum = 0;
-    i=1;
 	int counter=10;
 	for(counter=10;counter>=1;counter--){
 		printf("counter =%d\n",counter);
@@ -30,6 +29,5 @@ int main(void) {
 	}
 	while(i<=10);
 	printf("sum=%d\n",sum);
-
     return 0;
 }

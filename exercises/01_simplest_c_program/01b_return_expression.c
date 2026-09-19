@@ -14,8 +14,10 @@
  *
  * 验证: clings 检查程序退出码为 3
  */
+
 int global=2;
+
 int main(void) {
-int local=1;
+	int local=1;
     return global+local;
 }

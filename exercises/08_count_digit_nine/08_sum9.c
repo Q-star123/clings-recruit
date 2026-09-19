@@ -25,7 +25,16 @@
  * Return value:  how many digit in this num
  */
 int find(int num, int digit) {
-#error TODO: Fix this exercise. Run "clings hint" for help.
+    int counter =0;
+    do{
+        int last_digit=num%10;//此处这样做就能直接去掉前面的数字，只留一位
+        if(last_digit==digit){
+            counter++;
+        }
+        num/=10;//这样就可以除掉最后一位
+    }
+    while(num!=0);
+    return counter;
 }
 
 int main(void) {
