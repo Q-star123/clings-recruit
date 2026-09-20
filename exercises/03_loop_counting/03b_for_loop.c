@@ -27,6 +27,6 @@ int main(void) {
 		i++;
 	}
 	while(i<=10);
-	printf("sum= %d\n",sum);
+	printf("sum = %d\n",sum);
     return 0;
 }
