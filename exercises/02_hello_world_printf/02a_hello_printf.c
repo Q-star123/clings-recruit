@@ -16,6 +16,6 @@
 #include<stdio.h>
 int main()
 {
-	printf("hello,worid.\n");
+	printf("hello, world.\n");
 	return 0;
 }

@@ -17,9 +17,11 @@
 
 char *mystrcpy(char *dest, const char *src) {
     assert(dest != NULL && src != NULL);
-
-#error TODO: Implement mystrcpy using pointer idiom. Run "clings hint" for help.
+    char *ret=dest;//保存起始地址
+    while(*dest++ =*src++);
+    return ret;
 }
+
 
 int main(void) {
     char s1[256] = "";

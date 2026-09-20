@@ -15,11 +15,16 @@
 
 #include <math.h>
 #include <stdio.h>
-
-#error TODO: Define struct point {float x; float y;} with typedef. Run "clings hint" for help.
-
-#error TODO: Implement float calculate(point_t p1, point_t p2) for distance. Run "clings hint" for help.
-
+struct point{
+    float x;
+    float y;
+};
+typedef struct point point_t;//为了方便，我们这里将struct point换成point_t，也是因为程序员默认这个后缀
+float calculate(point_t p1,point_t p2){//我们这里要求要取出p1和p2
+float dx=p1.x-p2.x;
+float dy=p1.y-p2.y;//这里的.是为了调取p1p2中的坐标
+return sqrt(dx*dx+dy*dy);
+}
 int main(void) {
     point_t p1, p2;
     float distance;

@@ -22,6 +22,6 @@ int main(void) {
 	for(i=1;i<=100;i++){
 		sum+=i;
 	}
-    printf("%d",sum);
+    printf("sum = %d\n",sum);
     return 0;
 }
